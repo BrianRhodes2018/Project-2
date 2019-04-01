@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>US Causes of Death</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>U.S Top 10 Causes of Death</h1>
+        <p>Use the interactive charts below trends from the data</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">Nearly 75 percent of all deaths in the United States are attributed to just these ten causes,<br> 
+          with the top three of these accounting for over 50 percent of all deaths.</p>
+        <div class="thumbnail">
+          <div id="line"></div> 
+          <p class="text-center">The chart above allows you to explore how each causes' death rate changes over time. <br>By selecting only Heart Disease, Cancer, and Stroke, you can see how the 3 causes of death with the largest death rates in 1999 change over time. <br> By selecting only Alzheimer's Disease, Suicide and Accident, you can see how these causes have increased since 1999.
+          </p> 
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="thumbnail">
+          <div id="areaChart">
+          </div> 
+          <p class="text-center">The chart above shows how the total death rate changes over time <br>as well as how much each death rate contributes to the total for each year.</p> 
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="thumbnail">
+          <div id="stackedBar"></div>
+          <p class="text-center">The above chart demonstrates the proportion each cause of death contributes to the total death rate over time.<br>For example, one can see that while heart disease continues to be the largest cause of death over time, it accounts for a smaller proporiton of the total deaths over time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+  <script src="../static/js/plots.js"></script>
+</body>
+
+</html>
